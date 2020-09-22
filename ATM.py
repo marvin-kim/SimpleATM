@@ -60,11 +60,9 @@ class ATM:
     self.__account = None
     self.ejectCard()
     if hasCard:
-      print("Card ejected and ATM reset.")
-      return True, ""
+      return True, "Card ejected and ATM reset."
     else:
-      print("No card. ATM reset.")
-      return False, ""
+      return False, "No card. ATM reset."
 
 
   def displayAccounts(self):
